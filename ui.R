@@ -16,12 +16,14 @@ source("ui/helpers.R")
 tagList(
   useShinyjs(),
   useShinydashboard(),
-  tags$head(
-    tags$script(src = "info_message.js"),
-    tags$link(href = "style.css", rel = "stylesheet")),        # How to connect the style.css file, rel is saying what that document is
+tags$head(
+  tags$script(src = "info_message.js"),
+  tags$link(href = "style.css",
+            rel = "stylesheet")),        # How to connect the style.css file, rel is saying what that document is
 
 # R shiny app will be a navigation page
 navbarPage(
+  
   title = img(src = "ej32.png"),
   
   # App title here

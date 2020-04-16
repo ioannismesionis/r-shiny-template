@@ -1,6 +1,3 @@
-# R script to install required packages
-source("/repos/shinytemplate/installPackages.R")
-
 # Load required packages
 library(shiny)              # package version: 1.1.0
 library(shinyjs)            # package version: 1.0
@@ -12,8 +9,8 @@ library(DT)                 # package version: 0.4
 library(ggplot2)            # package version: 3.2.1
 
 # Source any additional functions needed for different tasks in the R Shiny App
-source("/repos/shinytemplate/server/helpers.R")
-source("/repos/shinytemplate/ui/helpers.R")
+source("server/helpers.R")
+source("ui/helpers.R")
 
 # Create R shiny app with the specified css specifications
 tagList(

@@ -12,19 +12,20 @@ library(ggplot2)            # package version: 3.2.1
 source("server/helpers.R")
 source("ui/helpers.R")
 
-# Create R shiny app with the specified css specifications
-tagList(
-  useShinyjs(),
-  useShinydashboard(),
-tags$head(
-  tags$script(src = "info_message.js"),
-  tags$link(href = "style.css",
-            rel = "stylesheet")),        # How to connect the style.css file, rel is saying what that document is
+# # Create R shiny app with the specified css specifications
+# tagList(
+#   useShinyjs(),
+#   useShinydashboard(),
+# tags$head(
+#   tags$script(src = "info_message.js"),
+#   tags$link(href = "bootstrap.css",
+#             
+#             rel = "stylesheet")),        # How to connect the style.css file, rel is saying what that document is
 
 # R shiny app will be a navigation page
 navbarPage(
   
-  title = img(src = "ej32.png"),
+  title = "My App",
   
   # App title here
   windowTitle = "R Shiny Template",
@@ -41,4 +42,4 @@ navbarPage(
   source(file.path("ui", "tab-plot.R"),  local = TRUE)$value,
   source(file.path("ui", "tab-about.R"),  local = TRUE)$value
 )
-)
+#)

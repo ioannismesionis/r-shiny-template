@@ -10,8 +10,9 @@ tabPanel(
   # Split into two halves (bootstrap divides the page into 12 columns)
   fluidRow(
     column(3,
-           div(id = "img_container",
-                img(class = "img-responsive center-block", src = "wing_photo.jpg") # css specification and photo displayed
+           align = "left",
+           div(
+                img(style="display: inline-block;", src = "http://images.all-free-download.com/images/graphiclarge/natural_beauty_highdefinition_picture_166133.jpg", height=300, width=300) # css specification and photo displayed
            )
     ),
     column(9,

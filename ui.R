@@ -17,24 +17,20 @@ source("ui/helpers.R")
 tagList(
   useShinyjs(),
   useShinydashboard(),
-# tags$head(
-#   tags$script(src = "info_message.js"),
-#   tags$link(href = "bootstrap.css",
-# 
-#             rel = "stylesheet")),        # How to connect the style.css file, rel is saying what that document is
 
 # R shiny app will be a navigation page
 navbarPage(
   
-  title = "R - Shiny",
-  
+  title = img(src = "/r.png", style="margin-top: -14px; padding-right:10px;padding-bottom:10px", height = 60),
   # App title here
   windowTitle = "R Shiny Template",
+  
+  # theme to choose
   theme = shinytheme("spacelab"),
-  #theme = "bootstrap.css",
+  
   # id for css
   id = "mainNav",
-  #inverse = TRUE, 
+  # inverse = TRUE, 
   fluid = FALSE,
   collapsible = TRUE,
   

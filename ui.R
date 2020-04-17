@@ -7,32 +7,34 @@ library(shinycssloaders)    # package version: 0.3
 library(jsonlite)           # package version: 1.5
 library(DT)                 # package version: 0.4
 library(ggplot2)            # package version: 3.2.1
+library(shinythemes)
 
 # Source any additional functions needed for different tasks in the R Shiny App
 source("server/helpers.R")
 source("ui/helpers.R")
 
-# # Create R shiny app with the specified css specifications
-# tagList(
-#   useShinyjs(),
-#   useShinydashboard(),
+# Create R shiny app with the specified css specifications
+tagList(
+  useShinyjs(),
+  useShinydashboard(),
 # tags$head(
 #   tags$script(src = "info_message.js"),
 #   tags$link(href = "bootstrap.css",
-#             
+# 
 #             rel = "stylesheet")),        # How to connect the style.css file, rel is saying what that document is
 
 # R shiny app will be a navigation page
 navbarPage(
   
-  title = "My App",
+  title = "R - Shiny",
   
   # App title here
   windowTitle = "R Shiny Template",
-  
+  theme = shinytheme("spacelab"),
+  #theme = "bootstrap.css",
   # id for css
   id = "mainNav",
-  inverse = TRUE, 
+  #inverse = TRUE, 
   fluid = FALSE,
   collapsible = TRUE,
   
@@ -42,4 +44,4 @@ navbarPage(
   source(file.path("ui", "tab-plot.R"),  local = TRUE)$value,
   source(file.path("ui", "tab-about.R"),  local = TRUE)$value
 )
-#)
+)

@@ -14,9 +14,9 @@ tabPanel(
                  wellPanel(tags$ol("1. File Input tab."),
                            tags$ol("In this tab, you can upload a file and do some manipulations on the server side."),
                            tags$ol("2. Results tab"),
-                           tags$ol("This tab may be used to display some results - e.g. a table."),
+                           tags$ol("This tab may be used to display some results - e.g. a table and download it."),
                            tags$ol("3. Plots tab"),
-                           tags$ol("This tab may be used to display some results - e.g. a ggplot2."),
+                           tags$ol("This tab may be used to display some results and download the plot - e.g. a ggplot2 and download it."),
                            tags$ol("4. About tab."),
                            tags$ol("This tab is a generic one to diplsay the about section")
                  )),

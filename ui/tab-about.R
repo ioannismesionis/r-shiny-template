@@ -13,19 +13,21 @@ tabPanel(
            br(),
            h3("About R Shiny Template"),
            hr(),
-           p("The current R Shiny template is based on Long Term Galaxy R Shiny app."),
+           p("The current R Shiny template is based on personal work and references found online which will be listed below."),
            br(),
            p("You are more than welcome to expand the template by adding generic functionalities that you think it would be useful to have."),
            br(),
            
            h3("Version"),
            hr(),
-           p("V 1.0 - January 2020"),
+           p("V 1.0 - April 2020"),
            br(),
 
-           h3("Contact"),
+           h3("References"),
            hr(),
-           p("If you would like to report any issues, ask for more information or provide feedback about the R Shiny Template please get in contact with #DataScience.")
+           tags$a(href="https://github.com/rstudio/shinythemes", "Shiny themes"),
+           br(),
+           tags$a(href="https://deanattali.com/blog/advanced-shiny-tips/", "Code structure")
     ),
     column(3,
             br(), br(),
